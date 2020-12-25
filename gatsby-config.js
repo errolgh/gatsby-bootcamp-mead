@@ -8,9 +8,21 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'Full-stack Bootcamp',
-    author: 'Andrew Mead',
+    author: 'Errol Watson',
   },
   plugins: [
     'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
+    },
+    'gatsby-transformer-remark'
   ],
 }
+
+gatsby-plugin-sharp
+gatsby-remark-images
+gatsby-remark-relative-images

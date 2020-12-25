@@ -12,9 +12,11 @@ const Footer = () => {
         }
     `)
 
+const currentYear = new Date().getFullYear()
+
     return(
         <footer>
-            <p>Created by {data.site.siteMetadata.author}, c 2019.</p>
+            <p>Created by {data.site.siteMetadata.author}, &#169; {currentYear}.</p>
         </footer>
     )
 }
